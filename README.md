@@ -1,8 +1,9 @@
-# asw2122_0
+# dede_es5b
 
-[![Actions Status](https://github.com/arquisoft/dede_es5b/workflows/CI%20for%20ASW2122/badge.svg)](https://github.com/arquisoft/dede_es5b/actions)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pglez82_asw2122_0&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pglez82_asw2122_0)
-[![codecov](https://codecov.io/gh/arquisoft/dede_es5b/branch/master/graph/badge.svg?token=VN4XG9NTRO)](https://codecov.io/gh/arquisoft/dede_es5b)
+[![pages-build-deployment](https://github.com/Arquisoft/dede_es5b/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Arquisoft/dede_es5b/actions/workflows/pages/pages-build-deployment)
+[![CI for ASW2122](https://github.com/Arquisoft/dede_es5b/actions/workflows/asw2122.yml/badge.svg)](https://github.com/Arquisoft/dede_es5b/actions/workflows/asw2122.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pglez82_dede_es5b&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pglez82_dede_es5b)
+[![codecov](https://codecov.io/gh/Arquisoft/dede_es5b/branch/main/graph/badge.svg?token=eOvTfFIDcW)](https://codecov.io/gh/Arquisoft/dede_es5b)
 
 <p float="left">
 <img src="https://blog.wildix.com/wp-content/uploads/2020/06/react-logo.jpg" height="100">
@@ -41,7 +42,7 @@ a continuación la webapp:
 cd webapp
 npm install
 npm start
-```
+```D
 
 Deberias ser capaz de acceder a la aplicación en [http://localhost:3000](http://localhost:3000).
 
