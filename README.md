@@ -42,7 +42,7 @@ a continuación la webapp:
 cd webapp
 npm install
 npm start
-```D
+```
 
 Deberias ser capaz de acceder a la aplicación en [http://localhost:3000](http://localhost:3000).
 
