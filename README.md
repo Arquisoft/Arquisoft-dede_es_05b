@@ -13,6 +13,11 @@
 
 Este proyecto es un ejemplo basico de un sitio web utilizando **React** con **Typescript** y un endpoint usando **NodeJS** con **express**
 
+## Miembros del equipo
+<ul>
+ <li> <b>Paula Puerta González</b>, UO243554</li>
+</ul>
+
 ## Guia de inicio rápido
 
 <mark>Si tienes instalados node.js y npm, asegurate de actualizarlos antes de intentar construir las imagenes</mark>
