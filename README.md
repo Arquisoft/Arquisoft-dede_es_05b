@@ -16,6 +16,7 @@ Este proyecto es un ejemplo basico de un sitio web utilizando **React** con **Ty
 ## Miembros del equipo
 <ul>
  <li> <b>Paula Puerta González</b>, UO243554</li>
+ <li> <b>Enol-Xesús González García</b>, UO263611</li>
 </ul>
 
 ## Guia de inicio rápido
