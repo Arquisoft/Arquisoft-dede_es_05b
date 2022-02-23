@@ -1,6 +1,35 @@
 [[section-architecture-constraints]]
 == Architecture Constraints
 
+.Restricciones Técnicas
+[options="header", cols="1,2"]
+|===
+|Restricción|Descripción
+| _React_ | La aplicación será programada en React para el front-end
+| _Typescript_ | La aplicación será implementada en Typescript
+| _Github_ | Se utilizará Github como control de versiones. Cada miembro del equipo trabajará en una rama particular y se realizarán revisiones de código mediante pull
+requests.
+|===
+
+.Restricciones organizativas
+[options="header", cols="1,2"]
+|===
+|Restricción|Descripción
+| _Tiempo_ | La aplicación deberá estar finalizada al final del cuatrimestre.
+| _Tamaño del equipo_ | Los equipos están compuestos habitualmente por 5 personas, nuestro equipo está compuesto por dos personas.
+| _Diferentes asignaturas y planificación de reuniones_ | Los miembros de este equipo estamos cursando otras asignaturas, 
+lo que hace un poco más complicada la organización para reuniones. Además las reuniones se están llevando de forma telemática para facilitar la organización.
+|===
+
+.Conveniones
+[options="header", cols="1,2"]
+|===
+|Restricción|Descripción
+| _Typescript Conventions_ | La aplicación seguirá las convenciones de código de Typescript https://makecode.com/extensions/naming-conventions
+| _Idioma_ | La aplicación estará en el idioma español.
+| _Buenas prácticas de código_ | Se seguirán buenas prácticas de código para que la aplicación sea mantenible y fácil de extender en caso de necesitar amplicaciones.
+| _Principios SOLID_ | La aplicación seguirá los principios Solid https://makecode.com/extensions/naming-conventions 
+|===
 
 [role="arc42help"]
 ****
