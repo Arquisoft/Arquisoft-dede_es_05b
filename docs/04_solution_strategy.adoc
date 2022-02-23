@@ -1,24 +1,22 @@
 [[section-solution-strategy]]
 == Solution Strategy
 
+=== Tecnologías
+React:: El equipo usará React para la parte gráfica de la aplicación
+Solid:: Para que el usuario tenga siempre el control de sus datos se usará Solid con el objetivo de cuidar la privacidad de los usuarios
+Docker:: La aplicación se desplegará en Docker
 
-[role="arc42help"]
-****
-.Contents
-A short summary and explanation of the fundamental decisions and solution strategies, that shape the system's architecture. These include
+=== Estructura de la aplicación
+Patrón MVC:: La aplicación seguirá el patrón Modelo Vista Controlador que separa la lógica de negocio de la presentación y del módulo que gestiona las peticiones
 
-* technology decisions
-* decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
-* decisions on how to achieve key quality goals
-* relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
+=== Objetivos clave
+Privacidad:: Mediante el uso de los pods de Solid queremos que el usuario tenga el control de sus datos lo que sus datos estén menos expuestos lo que lo hace menos vulnerable a sufrir ataques
+Calidad del software:: Mediante el uso del patrón MVC y el uso de convenciones de código el equipo quiere hacer que la aplicación sea sencilla de mantener en el futuro además de que sea más fácil de ampliar si así 
+lo requiere en el futuro.
 
-.Motivation
-These decisions form the cornerstones for your architecture. They are the basis for many other detailed decisions or implementation rules.
-
-.Form
-Keep the explanation of these key decisions short.
-
-Motivate what you have decided and why you decided that way,
-based upon your problem statement, the quality goals and key constraints.
-Refer to details in the following sections.
-****
+=== Decisiones organizativas
+Lenguaje de código:: El código será escrito en inglés por cuestiones de mantenibilidad.
+Reparto de trabajo:: El equipo ha implementado un tablero Kanban donde mediante issues se repartirán las tareas entre los miembros del equipo
+Issues:: Cada miembro del equipo abrirá issues en caso de que se encuentré con un problema. Esto generará un espacio de debate y permitirá resolver las dudas que surgan de manera más sencilla.
+Canales de comunicación:: El equipo realizará las reuniones a través de Microsoft Teams además de estar comunicados sus integrantes por la red social Whatsapp. No obstante, la manera oficial 
+de expresar nuestras dudas y el reparto de tareas será a través de issues y el tablero Kanban.
