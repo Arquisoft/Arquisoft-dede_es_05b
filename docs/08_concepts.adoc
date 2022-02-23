@@ -14,10 +14,9 @@ La aplicación es segura debido a que el usuario tiene el control sobre los dato
 La aplicación a desarrollar es simple así que el equipo no espera que el usuario tenga dificultades para interactuar con la aplicación. Además el equipo pondrá enfasis
 en que la experiencia de usuario sea lo más amigable posible.
 
-=== _Conceptos nuevos_
-A día de hoy el equipo ya ha empezado a familiarizarse con los siguientes conceptos
-* Comunuicación
-* Organización de reuniones
-* Discusión de conceptos
-* Reparto de trabajo
-* Investigación acerca de nuevas herramientas
+=== _Logging_
+El usuario se identificará en la aplicación con su usuario y contraseña. Si la identificación es correcta se le redirigirá a la vista correspondiente. En caso contrario
+se mostrará un mensaje de error y seguirá en la vista de identificación.
+
+=== _Internacionalización_
+La aplicación estará en idioma español aunque el equipo está valorando internacionalizar la aplicación para que esté también disponible en idioma inglés
