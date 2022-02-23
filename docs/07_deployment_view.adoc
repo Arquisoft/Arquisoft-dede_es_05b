@@ -34,6 +34,13 @@ when your infrastructure is more complex.
 * When your (hardware) stakeholders prefer other kinds of diagrams rather than the deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
 ****
 
+El sistema se desplegará únicamente en formato web y su despliegue en producción se realizarámediante integración continua.
+
+Previo a su despliegue en el entorno de producción, el sistema se desplegará en un entorno de test. Esto nos servirá para comprobar que la aplicación funciona correctamente al ser ejecutada en un entorno diferente al local.
+
+Para la creación de entornos usaremos la herramienta _Docker_.
+
+ 
 === Infrastructure Level 1
 
 [role="arc42help"]
