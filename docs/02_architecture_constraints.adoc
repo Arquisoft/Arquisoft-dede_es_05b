@@ -17,8 +17,8 @@ requests.
 |===
 |Restricción|Descripción
 | _Tiempo_ | La aplicación deberá estar finalizada al final del cuatrimestre.
-| _Tamaño del equipo_ | Los equipos están compuestos habitualmente por 5 personas, nuestro equipo está compuesto por dos personas.
-| _Diferentes asignaturas y planificación de reuniones_ | Los miembros de este equipo estamos cursando otras asignaturas, 
+| _Tamaño del equipo_ | Los equipos están compuestos habitualmente por 5 personas. Este equipo está compuesto por dos personas.
+| _Diferentes asignaturas y planificación de reuniones_ | Los miembros de este equipo están cursando otras asignaturas, 
 lo que hace un poco más complicada la organización para reuniones. Además las reuniones se están llevando de forma telemática para facilitar la organización.
 |===
 
@@ -28,6 +28,6 @@ lo que hace un poco más complicada la organización para reuniones. Además las
 |Restricción|Descripción
 | _Typescript Conventions_ | La aplicación seguirá las convenciones de código de Typescript https://makecode.com/extensions/naming-conventions
 | _Idioma_ | La aplicación estará en el idioma español.
-| _Buenas prácticas de código_ | Se seguirán buenas prácticas de código para que la aplicación sea mantenible y fácil de extender en caso de necesitar amplicaciones.
+| _Buenas prácticas de código_ | El equipo seguirá buenas prácticas de código para que la aplicación sea mantenible y fácil de extender en caso de necesitar amplicaciones.
 | _Principios SOLID_ | La aplicación seguirá los principios Solid https://makecode.com/extensions/naming-conventions 
 |===
