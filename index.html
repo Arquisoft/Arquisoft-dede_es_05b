@@ -557,10 +557,7 @@ For documentation of your own system you use better the <em>plain</em> version.<
 </div>
 </div>
 <div class="paragraph">
-<p>Dede es un proyecto que se desarrolla en el curso 21-22 para la asignatura Arquitectura del Software del Grado en Ingeniería del Software de la Universidad de Oviedo.
-Los integrantes del equipo son:
-*Enol González García
-*Paula Puerta González</p>
+<p>Dede es un proyecto que se desarrolla en el curso 21-22 para la asignatura Arquitectura del Software del Grado en Ingeniería del Software de la Universidad de Oviedo.</p>
 </div>
 <div class="paragraph">
 <p>Dede consiste en una aplicación web de venta de productos alimenticios para animales. El proyecto seguirá la especificación SOLID y uno de sus grandes objetivos es asegurar que cada usuario es propietario de su propia información personal</p>
@@ -590,6 +587,9 @@ If requirements documents exist this overview should refer to these documents.</
 </div>
 </div>
 </div>
+<div class="paragraph">
+<p>La aplicación ofrece un servicio de compra de alimentos para distintas familias de animales, más allá de eso, la aplicación guardará los datos personales del usuario en PODS; de esta manera, la información personal del comprador no la almacenan los propietarios de la aplicación, la almacena el usuario, teniendo así el control sobre ella.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_quality_goals">1.2. Quality Goals</h3>
@@ -610,6 +610,36 @@ If you as an architect do not know how the quality of your work will be judged �
 </div>
 </div>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Cualidad</th>
+<th class="tableblock halign-left valign-top">Motivación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Privacidad</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se persigue que sea el usuario el único propietario de sus datos, para ello el almacenamiento de estos estará descentralizado</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Seguridad</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tanto para proteger al usuario como a la aplicación, esta debe de ser segura y no producir errores ni tener vulnerabilidades que puedan ser atacadas</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Funcionalidad</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Con el fin de que la experiencia del usuriario sea positiva, la aplicación no ha tener fallos que interrumpan su uso</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Accesibilidad</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Para llegar al mayor público posible, la web debe ser intuitiva y poder ser usada por usuarios no experimentados</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_stakeholders">1.3. Stakeholders</h3>
@@ -665,14 +695,20 @@ These stakeholders determine the extent and the level of detail of your work and
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Role-1&gt;</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Contact-1&gt;</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Expectation-1&gt;</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Profesores</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deberán aportar apoyo al equipo de desarrollo para recibir a cambio una aplicación de la mejor calidad posible</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Role-2&gt;</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Contact-2&gt;</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Expectation-2&gt;</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Equipo de desarrollo</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enol González García
+Paula Puerta González</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se espera aprender de una experiencia de trabajo en equipo, dando como resultado nuevos conocimientos de desarrollo, arquitectura, así como un buen dominio de proyectos SOLID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Usuarios</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Necesitarán una web amigable, que les facilite el proceso de compra y cumpla con los atributos de calidad establecidos</p></td>
 </tr>
 </tbody>
 </table>
