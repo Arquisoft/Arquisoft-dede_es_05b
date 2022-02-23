@@ -52,12 +52,13 @@ If you as an architect do not know how the quality of your work will be judged �
 A table with quality goals and concrete scenarios, ordered by priorities
 ****
 
+[options="header",cols="1,2"]
 |===
 |Cualidad|Motivación
-| _Privacidad_ | _Se persigue que sea el usuario el único propietario de sus datos, para ello el almacenamiento de estos estará descentralizado_
-| _Seguridad_ | _Tanto para proteger al usuario como a la aplicación, esta debe de ser segura y no producir errores ni tener vulnerabilidades que puedan ser atacadas_
-| _Funcionalidad_ | _Con el fin de que la experiencia del usuriario sea positiva, la aplicación no ha tener fallos que interrumpan su uso_
-| _Accesibilidad_ | _Para llegar al mayor público posible, la web debe ser intuitiva y poder ser usada por usuarios no experimentados_
+| _Privacidad_ | Se persigue que sea el usuario el único propietario de sus datos, para ello el almacenamiento de estos estará descentralizado
+| _Seguridad_ | Tanto para proteger al usuario como a la aplicación, esta debe de ser segura y no producir errores ni tener vulnerabilidades que puedan ser atacadas
+| _Funcionalidad_ | Con el fin de que la experiencia del usuriario sea positiva, la aplicación no ha tener fallos que interrumpan su uso
+| _Accesibilidad_ | Para llegar al mayor público posible, la web debe ser intuitiva y poder ser usada por usuarios no experimentados
 |===
 
 === Stakeholders
@@ -85,8 +86,8 @@ Table with role names, person names, and their expectations with respect to the 
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| _Profesores_ | __ | _Deberán aportar apoyo al equipo de desarrollo para recibir a cambio una aplicación de la mejor calidad posible_
-| _Equipo de desarrollo_ | _Enol González García
-Paula Puerta González_ | _Se espera aprender de una experiencia de trabajo en equipo, dando como resultado nuevos conocimientos de desarrollo, arquitectura, así como un buen dominio de proyectos SOLID_
-| _Usuarios_ | __ | _Necesitarán una web amigable, que les facilite el proceso de compra y cumpla con los atributos de calidad establecidos_
+| _Profesores_ |  | Deberán aportar apoyo al equipo de desarrollo para recibir a cambio una aplicación de la mejor calidad posible
+| _Equipo de desarrollo_ | Enol González García
+Paula Puerta González | Se espera aprender de una experiencia de trabajo en equipo, dando como resultado nuevos conocimientos de desarrollo, arquitectura, así como un buen dominio de proyectos SOLID
+| _Usuarios_ |  | Necesitarán una web amigable, que les facilite el proceso de compra y cumpla con los atributos de calidad establecidos
 |===
