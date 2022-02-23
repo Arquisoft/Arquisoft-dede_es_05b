@@ -485,7 +485,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_concept_n">8.3. <em>&lt;Concept n&gt;</em></a></li>
 </ul>
 </li>
-<li><a href="#section-design-decisions">9. Design Decisions</a></li>
+<li><a href="#section-design-decisions">9. Design Decisions</a>
+<ul class="sectlevel2">
+<li><a href="#_role_admin">9.1. Role ADMIN</a></li>
+</ul>
+</li>
 <li><a href="#section-quality-scenarios">10. Quality Requirements</a>
 <ul class="sectlevel2">
 <li><a href="#_quality_tree">10.1. Quality Tree</a></li>
@@ -1577,7 +1581,26 @@ here in this central section or whether you better document it locally
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_role_admin">9.1. Role ADMIN</h3>
+<div class="paragraph">
+<div class="title">Contexto</div>
+<p>Se necesita un rol administrador para poder cargar productos nuevos de forma fácil.</p>
+</div>
+<div class="paragraph">
+<div class="title">Decisión</div>
+<p>Es la forma más sencilla de implementar y también de usar una vez que la web esté desplegada. Por ello se decide que el rol admin tenga una vista a la que sólo este pueda acceder.</p>
+</div>
+<div class="paragraph">
+<div class="title">Estado</div>
+<p>Aceptada</p>
+</div>
+<div class="paragraph">
+<div class="title">Consecuencias</div>
+<p>Habrá que tener en cuenta detalles de seguridad para que este no sea un agujero de seguridad del sistema.</p>
+</div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
