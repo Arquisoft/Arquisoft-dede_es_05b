@@ -6,6 +6,7 @@
 |===
 |Restricción|Descripción
 | _React_ | La aplicación será programada en React para el front-end
+| _Almacenamiento_ | Los datos de los usuario serán almacenados en pods 
 | _Typescript_ | La aplicación será implementada en Typescript
 | _Github_ | Se utilizará Github como control de versiones. Cada miembro del equipo trabajará en una rama particular y se realizarán revisiones de código mediante pull
 requests.
