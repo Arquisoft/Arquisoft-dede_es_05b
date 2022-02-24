@@ -6,7 +6,7 @@
 
 El equipo ha confeccionado una tabla con los atributos de calidad
 
-[options="header", cols="1,2"]
+[options="header", cols="1,2,2,2"]
 |===
 |Atributo|Motivación|Prioridad|Dificultad
 |Privacidad|El usuario será el único propietario de sus datos. Por ello el almacenamiento estará descentralizado|Alta|Media
