@@ -456,7 +456,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_technical_context">3.2. Technical Context</a></li>
 </ul>
 </li>
-<li><a href="#section-solution-strategy">4. Solution Strategy</a></li>
+<li><a href="#section-solution-strategy">4. Solution Strategy</a>
+<ul class="sectlevel2">
+<li><a href="#_tecnologías">4.1. Tecnologías</a></li>
+<li><a href="#_estructura_de_la_aplicación">4.2. Estructura de la aplicación</a></li>
+<li><a href="#_objetivos_clave">4.3. Objetivos clave</a></li>
+<li><a href="#_decisiones_organizativas">4.4. Decisiones organizativas</a></li>
+</ul>
+</li>
 <li><a href="#section-building-block-view">5. Building Block View</a>
 <ul class="sectlevel2">
 <li><a href="#_whitebox_overall_system">5.1. Whitebox Overall System</a></li>
@@ -480,9 +487,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#section-concepts">8. Cross-cutting Concepts</a>
 <ul class="sectlevel2">
-<li><a href="#_domain_model">8.1. Domain model</a></li>
-<li><a href="#_concept_2">8.2. <em>&lt;Concept 2&gt;</em></a></li>
-<li><a href="#_concept_n">8.3. <em>&lt;Concept n&gt;</em></a></li>
+<li><a href="#_conceptos_de_dominio">8.1. <em>Conceptos de dominio</em></a></li>
+<li><a href="#_seguridad">8.2. <em>Seguridad</em></a></li>
+<li><a href="#_logging">8.3. <em>Logging</em></a></li>
+<li><a href="#_internacionalización">8.4. <em>Internacionalización</em></a></li>
 </ul>
 </li>
 <li><a href="#section-design-decisions">9. Design Decisions</a>
@@ -723,6 +731,97 @@ Paula Puerta González</p></td>
 <div class="sect1">
 <h2 id="section-architecture-constraints">2. Architecture Constraints</h2>
 <div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Restricciones Técnicas</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Restricción</th>
+<th class="tableblock halign-left valign-top">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>React</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La aplicación será programada en React para el front-end</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Almacenamiento</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Los datos de los usuario serán almacenados en pods</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Typescript</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La aplicación será implementada en Typescript</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Github</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se utilizará Github como control de versiones. Cada miembro del equipo trabajará en una rama particular y se realizarán revisiones de código mediante pull
+requests.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Restricciones organizativas</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Restricción</th>
+<th class="tableblock halign-left valign-top">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Tiempo</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La aplicación deberá estar finalizada al final del cuatrimestre.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Tamaño del equipo</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Los equipos están compuestos habitualmente por 5 personas. Este equipo está compuesto por dos personas.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Diferentes asignaturas y planificación de reuniones</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Los miembros de este equipo están cursando otras asignaturas,
+lo que hace un poco más complicada la organización para reuniones. Además las reuniones se están llevando de forma telemática para facilitar la organización.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Conveniones</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Restricción</th>
+<th class="tableblock halign-left valign-top">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Typescript Conventions</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La aplicación seguirá las convenciones de código de Typescript <a href="https://makecode.com/extensions/naming-conventions" class="bare">https://makecode.com/extensions/naming-conventions</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Idioma</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La aplicación estará en el idioma español.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Buenas prácticas de código</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El equipo seguirá buenas prácticas de código para que la aplicación sea mantenible y fácil de extender en caso de necesitar amplicaciones.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Principios SOLID</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La aplicación seguirá los principios Solid <a href="https://makecode.com/extensions/naming-conventions" class="bare">https://makecode.com/extensions/naming-conventions</a></p></td>
+</tr>
+</tbody>
+</table>
 <div class="sidebarblock arc42help">
 <div class="content">
 <div class="paragraph">
@@ -853,6 +952,75 @@ together with a mapping table showing the relationships between channels and inp
 <div class="sect1">
 <h2 id="section-solution-strategy">4. Solution Strategy</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_tecnologías">4.1. Tecnologías</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">React</dt>
+<dd>
+<p>El equipo usará React para la parte gráfica de la aplicación</p>
+</dd>
+<dt class="hdlist1">Solid</dt>
+<dd>
+<p>Para que el usuario tenga siempre el control de sus datos se usará Solid con el objetivo de cuidar la privacidad de los usuarios</p>
+</dd>
+<dt class="hdlist1">Docker</dt>
+<dd>
+<p>La aplicación se desplegará en Docker</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_estructura_de_la_aplicación">4.2. Estructura de la aplicación</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Patrón MVC</dt>
+<dd>
+<p>La aplicación seguirá el patrón Modelo Vista Controlador que separa la lógica de negocio de la presentación y del módulo que gestiona las peticiones</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_objetivos_clave">4.3. Objetivos clave</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Privacidad</dt>
+<dd>
+<p>Mediante el uso de los pods de Solid queremos que el usuario tenga el control de sus datos lo que sus datos estén menos expuestos lo que lo hace menos vulnerable a sufrir ataques</p>
+</dd>
+<dt class="hdlist1">Calidad del software</dt>
+<dd>
+<p>Mediante el uso del patrón MVC y el uso de convenciones de código el equipo quiere hacer que la aplicación sea sencilla de mantener en el futuro además de que sea más fácil de ampliar si así
+lo requiere en el futuro.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_decisiones_organizativas">4.4. Decisiones organizativas</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Lenguaje de código</dt>
+<dd>
+<p>El código será escrito en inglés por cuestiones de mantenibilidad.</p>
+</dd>
+<dt class="hdlist1">Reparto de trabajo</dt>
+<dd>
+<p>El equipo ha implementado un tablero Kanban donde mediante issues se repartirán las tareas entre los miembros del equipo</p>
+</dd>
+<dt class="hdlist1">Issues</dt>
+<dd>
+<p>Cada miembro del equipo abrirá issues en caso de que se encuentré con un problema. Esto generará un espacio de debate y permitirá resolver las dudas que surgan de manera más sencilla.</p>
+</dd>
+<dt class="hdlist1">Canales de comunicación</dt>
+<dd>
+<p>El equipo realizará las reuniones a través de Microsoft Teams además de estar comunicados sus integrantes por la red social Whatsapp. No obstante, la manera oficial
+de expresar nuestras dudas y el reparto de tareas será a través de issues y el tablero Kanban.</p>
+</dd>
+</dl>
+</div>
 <div class="sidebarblock arc42help">
 <div class="content">
 <div class="paragraph">
@@ -891,6 +1059,7 @@ Refer to details in the following sections.</p>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1420,121 +1589,80 @@ when your infrastructure is more complex.</p>
 <div class="sect1">
 <h2 id="section-concepts">8. Cross-cutting Concepts</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_conceptos_de_dominio">8.1. <em>Conceptos de dominio</em></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Concepto</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Usuario</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Representa al usuario de la tienda. Se obtendrá su información a través de los pods si acepta los permisos necesarios</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_seguridad">8.2. <em>Seguridad</em></h3>
+<div class="paragraph">
+<p>La aplicación es segura debido a que el usuario tiene el control sobre los datos que usa la aplicación. Además se controlará el acceso a la aplicación mediante un sistema de roles.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_logging">8.3. <em>Logging</em></h3>
+<div class="paragraph">
+<p>El usuario se identificará en la aplicación con su usuario y contraseña. Si la identificación es correcta se le redirigirá a la vista correspondiente. En caso contrario
+se mostrará un mensaje de error y seguirá en la vista de identificación.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_internacionalización">8.4. <em>Internacionalización</em></h3>
+<div class="paragraph">
+<p>La aplicación estará en idioma español aunque el equipo está valorando internacionalizar la aplicación para que esté también disponible en idioma inglés</p>
+</div>
 <div class="sidebarblock arc42help">
 <div class="content">
 <div class="paragraph">
-<div class="title">Content</div>
-<p>This section describes overall, principal regulations and solution ideas that are
-relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks.
-They can include many different topics, such as</p>
+<div class="title">Contents</div>
+<p>Concretization of (sometimes vague or implicit) quality requirements using (quality) scenarios.</p>
+</div>
+<div class="paragraph">
+<p>These scenarios describe what should happen when a stimulus arrives at the system.</p>
+</div>
+<div class="paragraph">
+<p>For architects, two kinds of scenarios are important:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>domain models</p>
+<p>Usage scenarios (also called application scenarios or use case scenarios) describe the system’s runtime reaction to a certain stimulus. This also includes scenarios that describe the system’s efficiency or performance. Example: The system reacts to a user’s request within one second.</p>
 </li>
 <li>
-<p>architecture patterns or design patterns</p>
-</li>
-<li>
-<p>rules for using specific technology</p>
-</li>
-<li>
-<p>principal, often technical decisions of overall decisions</p>
-</li>
-<li>
-<p>implementation rules</p>
+<p>Change scenarios describe a modification of the system or of its immediate environment. Example: Additional functionality is implemented or requirements for a quality attribute change.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <div class="title">Motivation</div>
-<p>Concepts form the basis for <em>conceptual integrity</em> (consistency, homogeneity)
-of the architecture. Thus, they are an important contribution to achieve inner qualities of your system.</p>
+<p>Scenarios make quality requirements concrete and allow to
+more easily measure or decide whether they are fulfilled.</p>
 </div>
 <div class="paragraph">
-<p>Some of these concepts cannot be assigned to individual building blocks
-(e.g. security or safety). This is the place in the template that we provided for a
-cohesive specification of such concepts.</p>
+<p>Especially when you want to assess your architecture using methods like
+ATAM you need to describe your quality goals (from section 1.2)
+more precisely down to a level of scenarios that can be discussed and evaluated.</p>
 </div>
 <div class="paragraph">
 <div class="title">Form</div>
-<p>The form can be varied:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>concept papers with any kind of structure</p>
-</li>
-<li>
-<p>cross-cutting model excerpts or scenarios using notations of the architecture views</p>
-</li>
-<li>
-<p>sample implementations, especially for technical concepts</p>
-</li>
-<li>
-<p>reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<div class="title">Structure</div>
-<p>A potential (but not mandatory) structure for this section could be:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Domain concepts</p>
-</li>
-<li>
-<p>User Experience concepts (UX)</p>
-</li>
-<li>
-<p>Safety and security concepts</p>
-</li>
-<li>
-<p>Architecture and design patterns</p>
-</li>
-<li>
-<p>"Under-the-hood"</p>
-</li>
-<li>
-<p>development concepts</p>
-</li>
-<li>
-<p>operational concepts</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Note: it might be difficult to assign individual concepts to one specific topic
-on this list.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./images/08-Crosscutting-Concepts-Structure-EN.png" alt="Possible topics for crosscutting concepts"></span></p>
+<p>Tabular or free form text.</p>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_domain_model">8.1. Domain model</h3>
-<div class="paragraph">
-<p><span class="image"><img src="./images/UmlDiagram.png" alt="Example UML Diagram"></span></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_concept_2">8.2. <em>&lt;Concept 2&gt;</em></h3>
-<div class="paragraph">
-<p><em>&lt;explanation&gt;</em></p>
-</div>
-<div class="paragraph">
-<p>&#8230;&#8203;</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_concept_n">8.3. <em>&lt;Concept n&gt;</em></h3>
-<div class="paragraph">
-<p><em>&lt;explanation&gt;</em></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1606,7 +1734,57 @@ here in this central section or whether you better document it locally
 <div class="sect1">
 <h2 id="section-quality-scenarios">10. Quality Requirements</h2>
 <div class="sectionbody">
-<div class="sidebarblock arc42help">
+<div class="paragraph arc42help">
+<p>El equipo ha confeccionado una tabla con los atributos de calidad</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 28.5714%;">
+<col style="width: 28.5715%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Atributo</th>
+<th class="tableblock halign-left valign-top">Motivación</th>
+<th class="tableblock halign-left valign-top">Prioridad</th>
+<th class="tableblock halign-left valign-top">Dificultad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privacidad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El usuario será el único propietario de sus datos. Por ello el almacenamiento estará descentralizado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seguridad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Para proteger al usuaruio y a la aplicación esta debe de ser segura y no debe producir errores ni tener vulnerabilidades que puedan ser atacadas</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Funcionalidad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Con el fin de que la experiencia sea positiva, la aplicación no debe tener fallos que interrumpan su uso</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accesibilidad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Para llegar al mayor público posible, la web debe de ser intuitiva y poder ser usada por usuarios no experimentados</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media</p></td>
+</tr>
+</tbody>
+</table>
+<div class="imageblock">
+<div class="content">
+<img src="./images/arbolAC.png" alt="arbolAC">
+</div>
+</div>
+<div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
 <div class="title">Content</div>
@@ -1776,6 +1954,44 @@ more precisely down to a level of scenarios that can be discussed and evaluated.
 <div class="sect1">
 <h2 id="section-glossary">12. Glossary</h2>
 <div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Término</th>
+<th class="tableblock halign-left valign-top">Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Proyecto de descentralización de datos en la web dirigido por Tim Berners-Lee que tiene como objetivo mejorar la privacidad siendo el usuario quien decide dónde almacenar sus datos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pods</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lugar donde se almacenan los datos en Solid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">React</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Biblioteca diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. Es mantenido por Facebook y la comunidad de software libre</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MongoDB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sistema de bases de datos NoSQL orientado a documentos y de código abierto</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Typescript</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lenguaje de programación libre y de código abierto desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript que añade tipos estáticos y objetos basados en clases</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Docker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos.​</p></td>
+</tr>
+</tbody>
+</table>
 <div class="sidebarblock arc42help">
 <div class="content">
 <div class="paragraph">
@@ -1855,7 +2071,7 @@ Created by Dr. Peter Hruschka &amp; Dr. Gernot Starke.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-02-18 16:08:39 +0100
+Last updated 2022-02-22 23:12:07 +0100
 </div>
 </div>
 </body>
