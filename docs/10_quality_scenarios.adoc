@@ -3,6 +3,20 @@
 
 
 [role="arc42help"]
+
+El equipo ha confeccionado una tabla con los atributos de calidad
+
+[options="header", cols="1,2"]
+|===
+|Atributo|Motivación|Prioridad|Dificultad
+|Privacidad|El usuario será el único propietario de sus datos. Por ello el almacenamiento estará descentralizado|Alta|Media
+|Seguridad|Para proteger al usuaruio y a la aplicación esta debe de ser segura y no debe producir errores ni tener vulnerabilidades que puedan ser atacadas |Alta|Media
+|Funcionalidad|Con el fin de que la experiencia sea positiva, la aplicación no debe tener fallos que interrumpan su uso |Media|Media
+|Accesibilidad|Para llegar al mayor público posible, la web debe de ser intuitiva y poder ser usada por usuarios no experimentados|Media|Media
+|===
+
+[caption="Arbol de atributos de calidad"]
+image::arbolAC.png[]
 ****
 
 .Content
