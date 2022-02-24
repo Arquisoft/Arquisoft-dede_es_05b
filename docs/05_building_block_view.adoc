@@ -57,7 +57,9 @@ In the best case you will get away with examples or simple signatures.
 
 ****
 
-_**<Overview Diagram>**_
+image:whitebox_overview.jpeg["WhiteBox Overview"]
+
+
 
 Motivation::
 
@@ -122,23 +124,6 @@ _<(optional) Open Issues/Problems/Risks>_
 
 
 
-==== <Name black box 2>
-
-_<black box template>_
-
-==== <Name black box n>
-
-_<black box template>_
-
-
-==== <Name interface 1>
-
-...
-
-==== <Name interface m>
-
-
-
 === Level 2
 
 [role="arc42help"]
@@ -149,6 +134,8 @@ You have to decide which building blocks of your system are important enough to 
 Please prefer relevance over completeness. Specify important, surprising, risky, complex or volatile building blocks.
 Leave out normal, simple, boring or standardized parts of your system
 ****
+
+image:whitebox_level2.jpeg["WhiteBox Level 2"]
 
 ==== White Box _<building block 1>_
 

@@ -15,3 +15,21 @@ This should be your motto for systematic detection and evaluation of risks and t
 .Form
 List of risks and/or technical debts, probably including suggested measures to minimize, mitigate or avoid risks or reduce technical debts.
 ****
+
+[options="header",cols="1,2"]
+|===
+|Riesgo|Reflexión
+| _Abandono de un desarrollador_ | Si uno de nos integrantes del equipo de desarrollo abandona el proyecto, se queda una sóla persona desarrollando, el proyecto tendría una gran probabilidad de fracasar.
+| _Incapacidad del equipo para llegar a acuerdos_ | Discrepancias entre los componentes podrían retrasar considerablemente el avance.
+| _Falta de tiempo_ | Los desarrolladores pueden tener problemas para encontrar tiempo suficiente para que el desarrollo del sistema sea satisfactorio.
+
+|===
+
+[options="header",cols="1,2"]
+|===
+|Deuda técnica|Reflexión
+| _Desconocimiento de los lenguajes_ | La carencia de experiencia de todos los desarrolladores en los lenguajes hará que el progreso del proyecto sea más lento
+| _Funcionalidades no testeadas_ | Funcionalidades que no se prueben en profundidad pueden fallar, si se sigue desarrollando a partir de estas, se arrastran fallos y pueden surgir fallos en cascada que no se entienda por qué suceden.
+
+
+|===

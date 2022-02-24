@@ -24,3 +24,18 @@ Various options:
 * more detailed in form of separate sections per decision
 * ADR (architecture decision record) for every important decision
 ****
+
+=== Role ADMIN
+
+.Motivación
+Se necesita un rol administrador para poder cargar productos nuevos de forma fácil.
+
+.Decisión
+Es la forma más sencilla de implementar y también de usar una vez que la web esté desplegada. Por ello se decide que el rol admin tenga una vista a la que sólo este pueda acceder.
+
+.Estado
+Aceptada
+
+.Consecuencias
+Habrá que tener en cuenta detalles de seguridad para que este no sea un agujero de seguridad del sistema.
+
